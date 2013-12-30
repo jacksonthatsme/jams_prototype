@@ -1,0 +1,31 @@
+/* VARIABLES */
+/* COLORS */
+$purple: rgb(30,11,41);
+$pink: rgb(203,24,98);
+$grey: rgb(135,135,135);
+$white: rgb(255,255,255);
+/*BREAKPOINTS*/
+$extra-l-bp: "screen and (min-width : 1250px)";
+$large-bp: "screen and (max-width : 1000px)";
+$medium-bp: "screen and (max-width : 800px)";
+$med-small-bp: "screen and (max-width : 600px)";
+$small-bp: "screen and (max-width : 400px)";
+/* MIXINS */
+@mixin block{
+  width: 100%;
+  display: block;
+}
+/* BASE */
+html,body{
+  height: 100%;
+  width: 100%;
+}
+body{
+  font-size: 16px;
+  font-family: 'brandon_grotesque', helvetica, arial;
+}
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+ }

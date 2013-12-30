@@ -1,0 +1,45 @@
+2013-12-13 00:08:35    create style.css 
+2013-12-13 00:09:30    create jams.css 
+2013-12-13 00:09:49    remove .sass-cache/ 
+2013-12-13 00:09:49    remove jams.css 
+2013-12-13 00:09:49    create jams.css 
+2013-12-13 00:22:16    remove .sass-cache/ 
+2013-12-13 00:22:16    remove jams.css 
+2013-12-13 00:22:16    create jams.css 
+2013-12-13 00:23:59    create style.css 
+2013-12-13 00:24:50    remove .sass-cache/ 
+2013-12-13 00:24:50    remove style.css 
+2013-12-13 00:24:50    create style.css 
+2013-12-13 00:32:27     error sass/style.scss (Line 1: Invalid CSS after "@include ": expected identifier, was ""reset";")
+2013-12-13 00:32:27 overwrite style.css 
+2013-12-13 00:33:34     error sass/style.scss (Line 1: Invalid CSS after "@include ": expected identifier, was "'reset';")
+2013-12-13 00:33:34 overwrite style.css 
+2013-12-13 00:34:07 overwrite style.css 
+2013-12-13 00:34:50 overwrite style.css 
+2013-12-13 00:37:42     error sass/style.scss (Line 3: Invalid CSS after "... "compass/css3"": expected selector or at-rule, was "@import 'reset';")
+2013-12-13 00:37:42 overwrite style.css 
+2013-12-13 00:37:59     error sass/style.scss (Line 1: Invalid CSS after "@import ": expected file to import (string or url()), was "'compass/css3;;")
+2013-12-13 00:37:59 overwrite style.css 
+2013-12-13 00:38:07 overwrite style.css 
+2013-12-13 00:39:13 overwrite style.css 
+2013-12-13 00:39:41 overwrite style.css 
+2013-12-13 00:42:16 overwrite style.css 
+2013-12-13 00:42:32 overwrite style.css 
+2013-12-13 00:43:07 overwrite style.css 
+2013-12-13 00:43:16 overwrite style.css 
+2013-12-13 00:43:23 overwrite style.css 
+2013-12-13 00:43:46 overwrite style.css 
+2013-12-13 00:44:10 overwrite style.css 
+2013-12-13 00:44:53 overwrite style.css 
+2013-12-13 00:45:16 overwrite style.css 
+2013-12-13 00:45:25 overwrite style.css 
+2013-12-13 00:47:16 overwrite style.css 
+2013-12-13 00:49:00 overwrite style.css 
+2013-12-13 00:49:10 overwrite style.css 
+2013-12-13 00:49:19 overwrite style.css 
+2013-12-13 00:49:31 overwrite style.css 
+2013-12-13 00:51:17 overwrite style.css 
+2013-12-13 00:51:25 overwrite style.css 
+2013-12-13 00:51:28 overwrite style.css 
+2013-12-13 00:57:10 identical style.css 
+2013-12-13 01:12:32 overwrite style.css 

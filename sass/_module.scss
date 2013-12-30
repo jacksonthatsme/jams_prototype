@@ -1,0 +1,137 @@
+.close-link{
+  display: none;
+}
+.index-list{
+  margin: 10% auto 0px;
+  width: intrinsic;
+  ul{
+    margin: 6px 0px 0px;
+    padding: 20px 0px 0px;
+    -webkit-column-count:  3;
+    -moz-column-count:  3;
+    -webkit-column-gap:  90px;
+     -moz-column-gap:  90px;
+    -o-column-count:  3;
+    -ms-column-count:  3;
+    -o-column-gap:  90px;
+    -ms-column-gap:  90px;
+    li{
+      a{
+        &:hover{
+          color: $pink;
+        }
+      }
+    }
+  }
+  @media #{$medium-bp}{
+    ul{
+      -o-column-gap:  40px;
+      -ms-column-gap:  40px;
+      -webkit-column-gap:  40px;
+      -moz-column-gap:  40px;
+    }
+  }
+  @media #{$med-small-bp}{
+    ul{
+      -webkit-column-count:  2;
+      -moz-column-count:  2;
+      -o-column-count:  2;
+      -ms-column-count:  2;
+    }
+  }
+  @media #{$small-bp}{
+    display: none;
+  }
+}
+h2.tagline{
+  position: absolute;
+  margin-top: -120px;
+  margin-left: 210px;
+}
+.pagedown{
+  position: absolute;
+  bottom: 10px;
+  z-index: 100;
+  text-align: center;
+  font-size: 3em;
+  color: $white;
+  @include block;
+  .button-container{
+    margin: 0px auto;
+    width: 150px;
+    height: 144px;
+    .button{
+      width: 150px;
+      height: 144px;
+      background-image: url('./images/droplet.png');
+      background-size: cover;
+    }
+    &:hover .icon{
+      display: block;
+      padding-top: 50px;
+    }
+    .icon{
+      display: block;
+      padding-top: 45px;
+    }
+  }
+  @media #{$medium-bp}{
+    bottom: 80px;
+    font-size: 2.3em;
+    .button-container{
+      width: 104px;
+      height: 100px;
+      .button{
+        width: 104px;
+        height: 100px;
+        &:hover .icon{
+          display: block;
+          padding-top: 40px;
+        }
+        .icon{
+          display: block;
+          padding-top: 35px;
+        }
+      }
+    }
+  }
+}
+table.list{
+  border-collapse: collapse;
+  padding: 0px 20px;
+  tr{
+    counter-increment: playlist;
+    cursor: pointer;
+    
+    &:hover{
+      background-color: tint($purple, 90%);
+      & > td.count:before{
+        content: "p";
+        font-family: 'jamcons';
+        color: $pink;
+      }
+    }
+    &:active{
+      background-color: tint($purple, 80%);
+    }
+  }
+  td{
+   padding: .8em 0;
+   vertical-align: top; 
+   &.duration{
+     text-align: right;
+     padding-right: 20px;
+   }
+   &.count{
+    width: 60px;
+    padding-left: 20px;
+     &:before{
+      content: counter(playlist, decimal-leading-zero);
+      vertical-align: baseline;
+      }
+   }
+   &.listing{
+     padding-right: 20px;
+   }
+  } 
+}

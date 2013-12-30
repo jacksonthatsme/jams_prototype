@@ -1,0 +1,172 @@
+section{
+  @include block;
+  @include box-sizing(border-box);
+  &.head{
+    height: calc(100% - 55px);
+    height: -moz-calc(100% - 55px);
+    height: -webkit-calc(100% - 55px);
+    height: -o-calc(100% - 55px);
+    height: -ms-calc(100% - 55px);
+    background-color: $purple;
+    background-image: url('./images/bg_texture.png');
+    color: $white;
+    padding-top: 3em;
+  }
+  &.content{
+    color: $purple;
+  }
+  &.about{
+    display: none;
+    height: calc(100% - 55px);
+    padding-top: 15%;
+    div{
+      &.main-copy{
+        width: 80%;
+        float: left;
+        padding-right: 120px;
+        @media #{$extra-l-bp}{
+          padding-right: 90px;
+        }
+        @media #{$large-bp}{
+          width: 70%;
+          padding-right: 90px;
+        }
+        @media #{$medium-bp}{
+          float: none;
+          width: 100%;
+          padding-right: 0px;
+          padding-bottom: 28px;
+        }
+      }
+      &.aside-copy{
+        width: 20%;
+        float: left;
+        @media #{$large-bp}{
+          width: 30%;
+        }
+        @media #{$medium-bp}{
+          float: none;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+.container{
+  @include box-sizing(border-box);
+  margin: 0px auto;
+  width: 100%;
+  padding: 0px 7.5%;
+  max-width: 1250px;
+  @media #{$medium-bp}{
+    width: 100%;
+    padding: 0px 10%;
+  }
+}
+nav{
+  @include block;
+  position: absolute;
+  top: 3em;
+  color: $white;
+  .container{
+    div{
+      float: right;
+      cursor: pointer;
+      h3{
+        &:hover{
+          color: $pink;
+        }
+        
+      }
+    }
+  }
+}
+.music-player{
+  @include box-sizing(border-box);
+  @include block;
+  height: 55px;
+  background-color: rgba(255,255,255,.8);
+  position: fixed;
+  bottom: 0px;
+  color: $purple;
+  padding: .9em 0px;
+  font-size: 1.1em;
+  .container{
+    & *{
+      display: inline;
+    }
+    .playerbar{
+      float: left;
+    }
+    ul.control-panel{
+      float: right;
+      li{
+        .play{
+          font-size: 1.3em;
+          padding: 0px 30px;
+        }
+        .prev, .next{
+          font-size: .8em;
+        }
+      }
+    }
+  }
+}
+ul.playlists{
+  li.playlist{
+    padding-bottom: 7em;
+    counter-reset: playlist;
+    @include box-sizing(border-box);
+    margin: 0px auto;
+    width: 85%;
+    max-width: 1250px;
+    @media #{$medium-bp}{
+      width: 100%;
+      padding: 0px 10%;
+    }
+    
+    &:first-child{
+      margin-top: 9em;
+    }
+    .cover{
+      height: 430px;
+      width: 430px;
+      border: 1px solid $purple;
+      float: left;
+    }
+    table.list{
+      float: right;
+      margin-left: 6em;
+      width: 40%;
+    }
+  }
+}
+div.title{
+  @media #{$medium-bp}{
+    width: 100%;
+    margin-top: 30px;
+    img{
+      width: 100%;
+    }
+    h2.tagline{
+      margin-top: -16%;
+      margin-left: 25%;
+      font-size: 1.6em;
+    }
+  }
+}
+div.title{
+  @media #{$med-small-bp}{
+    h2.tagline{
+      font-size: 1.3em;
+    }
+  }
+}
+div.title{
+  @media #{$small-bp}{
+    margin-top: 50px;
+    h2.tagline{
+      font-size: .9em;
+    }
+  }
+}
